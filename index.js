@@ -1,10 +1,116 @@
-var arry=['one','two','three','four'];
-sessionStorage.setItem('arry',arry);
-sessionStorage.setItem('arry1','2');
-sessionStorage.setItem('arry2','3');
-sessionStorage.setItem('arry3','323');
-console.log(sessionStorage.getItem('arry'));
-sessionStorage.removeItem('arry2');
+// let city=["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"];
+// function changeDOM() {
+//     let cityTag='';
+//     city.forEach(function (val) {
+//          cityTag=cityTag+'<h1>'+val+'</h1>';
+//
+//     });
+//     document.getElementById('city').innerHTML=cityTag;
+// }
+function printName() {
+  let name=document.getElementById('name').value;
+  if(name) {
+      document.getElementById('output').innerText = 'Name is : ' + name
+  }else {
+      alert('Please Enter Name');
+  }
+}
+
+
+
+// var isON=false;
+//
+// function changeDOM() {
+//         document.getElementById('array').style.background=isON?'#eeeeee':'green';
+//         document.getElementById('btn').innerText=isON?'ON':'off';
+//         isON=!isON;
+//
+//
+// }
+// var colorList=['green','red','blue','yellow'];
+// var colorIndex=0;
+// function changeDOM() {
+//     colorIndex=Math.floor(Math.random() * colorList.length);
+//     document.getElementById('array').style.background=colorList[colorIndex];
+//
+//
+//
+// }
+
+// Write a JavaScript program to construct the following pattern, using a nested for loop.
+//     *
+//     * *
+//     * * *
+//     * * * *
+//     * * * * *
+// var str='*';
+// for (var i=0;i<5;i++){
+//     document.write('<br/>');
+//     for (var j=0;j<i;j++) {
+//         document.write(str);
+//     }
+// }
+// Write a JavaScript program to calculate the factorial of a number. In mathematics, the factorial
+// // of a non-negative integer n, denoted by n!, is the product of all positive integers less than or
+// // equal to n. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+// Write a JavaScript Program to convert English digits to neplai.
+
+// var num=5;
+// var ans=1;
+// for(var i=num;i>0;i--){
+//      ans=ans*i;
+// }
+// document.write(ans);
+
+
+
+// var dayArray=["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+// // dayArray.forEach(function (value,index) {
+// //     document.write(value+":"+index,'<br/>');
+// // });
+//
+// for(var i=0;i<dayArray.length;i++){
+//     document.write(dayArray[6],'<br/>');
+// }
+
+// if else
+//var i=0;
+// for (var i=0;i<10;i++){
+//         document.write(i,'<br/>');
+// }
+// while (i<10){
+//     document.write(i,'<br/>');
+//     i++;
+// }
+// do{
+//     document.write(i,'<br/>');
+//     i++;
+// }while (i<10);
+
+// var date=new Date();
+// var day=date.getDay();
+//
+// if(day==0){
+//     document.write('tooday is sunday');
+// }else if(day==1){
+//     document.write('today is not monday');
+// }
+// else if(day==2){
+//     document.write('today is not tuesday');
+// }else{
+//     document.write('todAY IS DAY')
+// }
+
+
+
+// var arry=['one','two','three','four'];
+// sessionStorage.setItem('arry',arry);
+// sessionStorage.setItem('arry1','2');
+// sessionStorage.setItem('arry2','3');
+// sessionStorage.setItem('arry3','323');
+// console.log(sessionStorage.getItem('arry'));
+// sessionStorage.removeItem('arry2');2
 // localStorage.setItem('arry',arry);
 // localStorage.setItem('arry1','ram');
 // localStorage.setItem('arr2','sita');

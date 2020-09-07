@@ -21,3 +21,21 @@
     /*0% { transform: rotate(0deg); }*/
     /*100% { transform: rotate(360deg); }*/
 /*}*/
+#array{
+    background: #eeeeee;
+    height: 100px;
+    width: 100px;
+}
+#btn{
+    background: red;
+    color: #ffffff;
+    border: 1px solid red;
+    padding: 10px 40px;
+    cursor: pointer;
+
+}
+#btn:hover{
+    background: #fff;
+    color: red;
+    border: 1px solid red;
+}
