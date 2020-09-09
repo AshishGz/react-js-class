@@ -1,0 +1,40 @@
+body{
+    max-width: 600px;
+    margin: auto;
+}
+#note{
+    width: 100%;
+    margin-top: 30px;
+}
+#saveBtn{
+    background: green;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid;
+    float: right;
+    margin: 20px 0px;
+}
+#saveBtn:hover{
+    background: #ffffff;
+    color: green;
+    border: 1px solid;
+}
+#display{
+margin-top:70px
+}
+.displayNote{
+    padding: 20px;
+    background: aqua;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#remove{
+    background: red;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid;
+    margin: 20px 0px;
+
+}
