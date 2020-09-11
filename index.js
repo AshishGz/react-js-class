@@ -1,3 +1,33 @@
+
+function testPromise(value) {
+
+    return new Promise(function (resolve,reject) {
+
+            if(value==true){
+                resolve('Saroj');
+            }else {
+                reject(new Error());
+            }
+
+
+
+    });
+
+}
+
+function getData() {
+    console.log(document.getElementById('name').value);
+    // testPromise(false).then(function (value) {
+    //     console.log('success');
+    //     console.log(value);
+    // }).catch(function (error) {
+    //     console.log('error');
+    //     console.log(error);
+    //
+    // });
+}
+
+
 // let city=["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"];
 // function changeDOM() {
 //     let cityTag='';
@@ -7,14 +37,14 @@
 //     });
 //     document.getElementById('city').innerHTML=cityTag;
 // }
-function printName() {
-  let name=document.getElementById('name').value;
-  if(name) {
-      document.getElementById('output').innerText = 'Name is : ' + name
-  }else {
-      alert('Please Enter Name');
-  }
-}
+// function printName() {
+//   let name=document.getElementById('name').value;
+//   if(name) {
+//       document.getElementById('output').innerText = 'Name is : ' + name
+//   }else {
+//       alert('Please Enter Name');
+//   }
+// }
 
 
 

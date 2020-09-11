@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="result">
+0
+</div>
+<div class="calculatorRow">
+    <div onclick="getValue(0)">0</div>
+    <div onclick="getValue(1)">1</div>
+    <div onclick="getValue(2)">2</div>
+    <div onclick="getValue(3)">3</div>
+</div>
+<div class="calculatorRow">
+    <div onclick="getValue(4)">4</div>
+    <div onclick="getValue(5)">5</div>
+    <div onclick="getValue(6)">6</div>
+    <div onclick="getValue(7)">7</div>
+</div>
+<div class="calculatorRow">
+    <div onclick="getValue(8)">8</div>
+    <div onclick="getValue(9)">9</div>
+    <div onclick="getOperator('+')">+</div>
+    <div onclick="getOperator('-')">-</div>
+</div>
+<div class="calculatorRow">
+    <div onclick="getOperator('%')">%</div>
+    <div onclick="getOperator('X')">X</div>
+    <div onclick="calculate()">=</div>
+    <div onclick="clearAll()">C</div>
+</div>
+</body>
+</html>
