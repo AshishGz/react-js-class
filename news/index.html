@@ -7,8 +7,11 @@
     <script src="index.js"></script>
 </head>
 <body>
-<div id="news">
-
+<div id="loader" style="display: block">loading news ...</div>
+<div id="news"></div>
+<div id="error" class="error" style="display: none">
+    <div>Something Went Wrong! Please Try Again!!</div>
+    <button onclick="retryData()">Retry</button>
 </div>
 </body>
 </html>

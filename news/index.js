@@ -9,9 +9,16 @@ function  getNewsData() {
     then(response=>response.json()).
     then(data=>diplayDatFromAPI(data)).
     catch(function (error) {
+        document.getElementById('loader').style.display='none';
+        document.getElementById('error').style.display='block';
 
     });
 
+}
+function retryData() {
+    document.getElementById('loader').style.display='block';
+    document.getElementById('error').style.display='none';
+    getNewsData();
 }
 function diplayDatFromAPI(data) {
     var html="";
@@ -29,5 +36,6 @@ function diplayDatFromAPI(data) {
         </div>`;
     });
     document.getElementById('news').innerHTML=html;
+    document.getElementById('loader').style.display='none';
 
 }

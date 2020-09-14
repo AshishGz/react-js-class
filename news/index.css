@@ -26,3 +26,15 @@ body{
     font-size: 12px;
     color: rgba(59, 59, 59, 0.87);
 }
+.error{
+    background: rgba(254, 0, 0, 0.22);
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.error button{
+    padding: 10px;
+    background: red;
+    color: white;
+}
