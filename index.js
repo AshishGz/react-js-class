@@ -1,31 +1,77 @@
-
-function testPromise(value) {
-
-    return new Promise(function (resolve,reject) {
-
-            if(value==true){
-                resolve('Saroj');
-            }else {
-                reject(new Error());
-            }
+var responseFromAPI=[];
 
 
+function   getDataFromAPI()  {
+    var xhttp =  new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+            responseFromAPI=this.responseText;
+            diplayDatFromAPI(responseFromAPI);
+        }
+    };
+    xhttp.open('GET', 'https://www.fruitmap.org/api/trees',true);
+    xhttp.send();
+
+
+}
+
+function  getDataByFetch() {
+    // fetch('{url}',{
+    //    method:''
+    // }).then().catch();
+    fetch('https://www.fruitmap.org/api/trees',{
+        method:'GET',
+       // body:{'das','dasd'}
+
+
+    }).
+    then(response=>response.json()).
+    then(data=>diplayDatFromAPI(data)).
+    catch(function (error) {
 
     });
 
 }
+function  diplayDatFromAPI(data) {
+    var html='';
+   data.forEach(function (value) {
+       html=html+'   <div style="margin: 20px;">\n' +
+           '        <div>'+value.name+'</div>\n' +
+           '        <div>Count: '+value.count+'</div>\n' +
+           '    </div>';
 
-function getData() {
-    console.log(document.getElementById('name').value);
-    // testPromise(false).then(function (value) {
-    //     console.log('success');
-    //     console.log(value);
-    // }).catch(function (error) {
-    //     console.log('error');
-    //     console.log(error);
-    //
-    // });
+    });
+    document.getElementById('api').innerHTML=html;
+
 }
+// function testPromise(value) {
+//
+//     return new Promise(function (resolve,reject) {
+//
+//             if(value==true){
+//                 resolve('Saroj');
+//             }else {
+//                 reject(new Error());
+//             }
+//
+//
+//
+//     });
+//
+// }
+//
+// function getData() {
+//     console.log(document.getElementById('name').value);
+//     // testPromise(false).then(function (value) {
+//     //     console.log('success');
+//     //     console.log(value);
+//     // }).catch(function (error) {
+//     //     console.log('error');
+//     //     console.log(error);
+//     //
+//     // });
+// }
 
 
 // let city=["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"];
