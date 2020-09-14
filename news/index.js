@@ -23,7 +23,7 @@ function retryData() {
 function diplayDatFromAPI(data) {
     var html="";
     data.articles.forEach(function (value) {
-        html=html+`<div style="margin-top: 20px">
+        html=html+`<a href=`+value.url+` target="_blank"><div style="margin-top: 20px">
             <div class="title">${value.title}</div>
             <img src=`+value.urlToImage+` class="image">
             <div class="news-fotter">
@@ -33,7 +33,7 @@ function diplayDatFromAPI(data) {
             </div>
             <div class="contnet">`+value.content+`</div>
 
-        </div>`;
+        </div></a>`;
     });
     document.getElementById('news').innerHTML=html;
     document.getElementById('loader').style.display='none';

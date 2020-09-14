@@ -38,3 +38,6 @@ body{
     background: red;
     color: white;
 }
+a{
+    text-decoration: none;
+}
